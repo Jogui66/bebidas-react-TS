@@ -11,15 +11,17 @@ function AppRouter() {
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={
+          <Route path="/bebidas-react-TS" element={
+            <Suspense fallback='Cargando...'>
               <IndexPage />
+            </Suspense>  
           } index />
-          <Route path="/favoritos" element={
+          <Route path="/bebidas-react-TS/favoritos" element={
             <Suspense fallback='Cargando...'>
               <FavoritesPage />
             </Suspense>
           } />
-          <Route path="/ai" element={
+          <Route path="/bebidas-react-TS/ai" element={
             <Suspense fallback='Cargando...'>
               <GenerateAi />
             </Suspense>
