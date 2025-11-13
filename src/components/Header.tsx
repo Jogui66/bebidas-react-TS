@@ -10,7 +10,8 @@ const Header = () => {
   })
 
   const {pathname} = useLocation()
-  const isHome = useMemo(() => pathname === '/', [pathname])
+  const isHome = useMemo(() => pathname === '/bebidas-react-TS/', [pathname])
+  console.log(isHome)
 
   const {categories, fetchCategories, searchRecipes, showNotification} = useAppStore()
 
@@ -45,23 +46,23 @@ const Header = () => {
         <div className="mx-auto container px-5 py-16">
             <div className="flex justify-between items-center">
                 <div>
-                    <img className="w-32" src="/logo.svg" alt="logotipo" />
+                    <img className="w-32" src="./logo.svg" alt="logotipo" />
                 </div>
                 <nav className="flex gap-4">
                   <NavLink 
-                    to="/" 
+                    to="/bebidas-react-TS/"
                     className={({isActive}) => 
                       isActive ? 'text-orange-500 uppercase font-bold' : 'text-white uppercase font-bold'
                     }
                   >Inicio</NavLink>
                   <NavLink 
-                    to="/favoritos" 
+                    to="/bebidas-react-TS/favoritos" 
                     className={({isActive}) => 
                       isActive ? 'text-orange-500 uppercase font-bold' : 'text-white uppercase font-bold'
                     }
                   >Favoritos</NavLink>
                   <NavLink 
-                    to="/ai" 
+                    to="/bebidas-react-TS/ai" 
                     className={({isActive}) => 
                       isActive ? 'text-orange-500 uppercase font-bold' : 'text-white uppercase font-bold'
                     }

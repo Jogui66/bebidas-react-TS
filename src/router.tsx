@@ -11,7 +11,7 @@ function AppRouter() {
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/bebidas-react-TS" element={
+          <Route path="/bebidas-react-TS/" element={
             <Suspense fallback='Cargando...'>
               <IndexPage />
             </Suspense>  
