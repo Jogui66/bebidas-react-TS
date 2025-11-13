@@ -12,9 +12,7 @@ function AppRouter() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={
-            <Suspense fallback='Cargando...'>
               <IndexPage />
-            </Suspense>  
           } index />
           <Route path="/favoritos" element={
             <Suspense fallback='Cargando...'>
